@@ -27,21 +27,17 @@ export default function Login(props) {
       console.log("values", values);
     },
     validationSchema: yup.object({
-      taiKhoan: yup
-        .string()
+      taiKhoan: yup.string()
         .min(6, "Mininum 6 characters")
         .max(32, "Maximum 32 characters")
         .required("Required!"),
-      matKhau: yup
-        .string()
-        .min(6, "Mininum 6 characters")
-        .max(15, "Maximum 15 characters")
-        .required("Required!"),
+      // matKhau: yup
+      //   .string()
+      //   .min(6, "Mininum 6 characters")
+      //   .max(15, "Maximum 15 characters")
+      //   .required("Required!"),
       email: yup.string().email("Invalid email format").required("Required!"),
-      soDt: yup
-        .string()
-        .min(6, "Mininum 6 characters")
-        .max(12, "Maximum 12 characters")
+      soDt: yup.string() .min(6, "Mininum 6 characters").max(12, "Maximum 12 characters")
         .required("Required!"),
       maNhom: yup
         .string()

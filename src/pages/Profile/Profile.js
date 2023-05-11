@@ -129,7 +129,7 @@ export default function Profile(props) {
                                         Mật khẩu
                                     </div>
                                 </div>
-                                <input name="matKhau" style={{ paddingLeft: '10px' }} onChange={formik.handleChange} value={formik.values.matKhau} className="w-full mt-2 text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" placeholder="Nhập vào mật khẩu" />
+                                <input    type="password"  name="matKhau" style={{ paddingLeft: '10px' }} onChange={formik.handleChange} value={formik.values.matKhau} className="w-full mt-2 text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" placeholder="Nhập vào mật khẩu" />
                                 {formik.errors.matKhau && formik.touched.matKhau ?
                                     <p className='text-red-500'>{formik.errors.matKhau}</p> : ''
                                 }
